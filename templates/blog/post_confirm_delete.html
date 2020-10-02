@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <h2>are u sure u want to delete {{object}} ?</h2>
+    <input type="submit" class="btn btn-danger" name="" value="Confirm" id="">
+</form>
+{% endblock %}
